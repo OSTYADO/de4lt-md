@@ -2,7 +2,7 @@
 
 
 const {
-  default: dreadedConnect,
+  default: de4ltmdConnect,
   useMultiFileAuthState,
   DisconnectReason,
   fetchLatestBaileysVersion,
@@ -42,11 +42,11 @@ const groupEvents = require("./groupEvents.js");
 async function startDreaded() {
 
         const {  saveCreds, state } = await useMultiFileAuthState(`session`)
-            const client = dreadedConnect({
+            const client = de4ltmdConnect({
         logger: pino({ level: 'silent' }),
         printQRInTerminal: true,
 version: [2, 3000, 1015901307],
-        browser: [`DREADED`,'Safari','3.0'],
+        browser: [`DE4LT`,'Safari','3.0'],
 fireInitQueries: false,
             shouldSyncHistoryMessage: true,
             downloadHistory: true,
@@ -141,7 +141,7 @@ if(presence === 'online')
       if (!client.public && !mek.key.fromMe && chatUpdate.type === "notify") return;
       
       m = smsg(client, mek, store);
-      require("./dreaded")(client, m, chatUpdate, store);
+      require("./de4ltmd")(client, m, chatUpdate, store);
     } catch (err) {
       console.log(err);
     }
@@ -260,7 +260,7 @@ if(presence === 'online')
             return DateTime.now().setZone('Africa/Nairobi').toLocaleString(DateTime.TIME_SIMPLE);
         };
 
-        let message = `Holla, ${getGreeting()},\n\nYou are connected to dreaded bot. 📡 \n\n`;
+        let message = `Holla, ${getGreeting()},\n\nYou are connected to de4ltmd bot. 📡 \n\n`;
 
         message += `👤 𝑩𝑶𝑻𝑵𝑨𝑴𝑬:- ${botname}\n`;
 message += `🔓 𝑴𝑶𝑫𝑬:- ${mode}\n`;
