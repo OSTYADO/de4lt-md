@@ -1,5 +1,5 @@
 const {
-  default: dreadedConnect,
+  default: de4ltmdconnect,
   useMultiFileAuthState,
   DisconnectReason,
   fetchLatestBaileysVersion,
