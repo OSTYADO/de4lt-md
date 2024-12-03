@@ -1,5 +1,5 @@
 const events = process.env.EVENTS || 'false';
-const botname = process.env.BOTNAME || 'DREADED';
+const botname = process.env.BOTNAME || 'DE4LT-MD';
 
 const Events = async (client, Fortu) => {
     const Myself = await client.decodeJid(client.user.id);
@@ -33,7 +33,7 @@ const Events = async (client, Fortu) => {
                 let userName2 = num;
 
                 let Lefttext = `
-          Good bye @${userName2.split("@")[0]} 👋, probably not gonna miss you `;
+          Good bye @${userName2.split("@")[0]} 👋, behave next time😀 `;
                 if (events === 'true') {
                     await client.sendMessage(Fortu.id, {
                         image: { url: dpuser },
